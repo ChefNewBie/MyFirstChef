@@ -1,0 +1,7 @@
+driftfile <% node[:ntp][:restrict] %>
+server <%= node[:ntp][:server] %>
+restrict <%= node[:ntp][:restrict] %>
+restrict <%= node[:ntp][:restrictlocal] %>
+restrict <%= node[:ntp][:restrictipv4] %>
+restrict <%= node[:ntp][:restrictipv6] %>
+
